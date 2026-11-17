@@ -1,9 +1,9 @@
-"use client";
-
-import React, { useState } from "react";
-import { LOOKVISION_CATEGORIES } from "../../../data/categories";
-import SidebarFilter from "../../../components/SidebarFilter";
-import { useParams } from "next/navigation";
+{/* Sol Akıllı Filtre Paneli */}
+      <SidebarFilter
+        categories={LOOKVISION_CATEGORIES}
+        selectedBrands={selectedBrands}
+        onBrandChange={handleBrandChange}
+      />
 
 export default function CategoryPage() {
   const params = useParams();
